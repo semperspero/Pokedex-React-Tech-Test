@@ -1,1 +1,1 @@
-# Pokedex
+# Base React app.

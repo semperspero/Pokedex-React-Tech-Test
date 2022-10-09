@@ -1,13 +1,7 @@
-import './App.css';
-
 function App() {
   return (
-    <div className='app-background'>
-      <div className="app-container">
-        <h1>REACT-POKEDEX</h1>
-      </div>
-    </div>
-  );
+    <h1>Hello</h1>
+  )
 }
 
 export default App;

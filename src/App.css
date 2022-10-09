@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+h1 {
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+}
+
+p {
+    margin: auto;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    background-color: black;
+}
+
+.cardswrapper {
+    width: 70%;
+    margin: auto 0;
+    background-color: black;
+}
+
+.cardcell {
+    display: flex;
+    height: 6rem;
+    width: 51rem;
+    margin: 10px;
+    padding: 1rem;
+    background-color: black;
+    align-items: center;
+    background: #eee;
+    border-radius: 2rem;
+    box-shadow: -0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
+    opacity: 0.8;
+    overflow: hidden;
+}
+.cardcell:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.textcell {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+.title {
+    width: 11rem;
+    margin: auto 1rem;
+
+}
+.description {
+    width: 12rem;
+    margin: auto 30px;
+    
+}
+.cardcolorleft {
+    width: 4rem;
+    height: 8.5rem;
+    transform: skewX(-35deg);
+    border-radius: 0.5rem;
+    box-shadow: -.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.cardcolorright  {
+    width: 4rem;
+    height: 8.5rem;
+    transform: skewX(-35deg);
+}
+.controlpanel {
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 100%;
+    margin: 5rem 2.5rem auto 10rem;
+    border-radius: 2rem;
+    background: #eee;
+    box-shadow: -0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
+}
+.buttoncontainer {
+
+
+}
+.typebutton {
+    width: 7rem;
+    margin: 1rem auto;
+    padding: 0.2rem;
+    border-radius: 0.8rem;
+    background-color: blue;
+    text-align: center;
+    color: #eee;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.typebutton:hover{
+    opacity: 1;
+    box-shadow: -0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
+}
+.typebutton::after {
+    opacity: 1;
+    box-shadow: -0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
+}
+#cptitle {
+    margin: 3rem auto;
+}
+
+.Bug {
+    background-color: #92BC2C;
+}
+.Dark {
+    background-color: #0C69C8;
+}
+.Dragon {
+    background-color: #42275a;
+}
+.Electric {
+    background-color: #EDD53E;
+}
+.Fairy {
+    background-color: #EC8CE5;
+}
+.Fight {
+    background-color: #CE4265;
+}
+.Fire {
+    background-color: #FB9B51;
+}
+.Flying {
+    background-color: #90A7DA;
+}
+.Ghost {
+    background-color: #516AAC;
+}
+.Grass {
+    background-color: #5FBC51;
+}
+.Ground {
+    background-color: #DC7545;
+}
+.Ice {
+    background-color: #70CCBD;
+}
+.Normal {
+    background-color: #9298A4;
+}
+.Poison {
+    background-color: #A864C7;
+}
+.Psychic {
+    background-color: #F66F71;
+}
+.Rock {
+    background-color: #C5B489;
+}
+.Steel {
+    background-color: #52869D;
+}
+.Water {
+    background-color: #4A90DD;
+}

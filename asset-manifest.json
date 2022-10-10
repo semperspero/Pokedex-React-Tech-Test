@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.1c9be06d.css",
+    "main.js": "/react-gh-pages/static/js/main.12b40035.js",
+    "static/media/pokemon-logo.png": "/react-gh-pages/static/media/pokemon-logo.3a5b1bd546a044be7904.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.1c9be06d.css.map": "/react-gh-pages/static/css/main.1c9be06d.css.map",
+    "main.12b40035.js.map": "/react-gh-pages/static/js/main.12b40035.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c9be06d.css",
+    "static/js/main.12b40035.js"
+  ]
+}

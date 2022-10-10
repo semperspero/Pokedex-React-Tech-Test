@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
 }
 
 img {
@@ -44,15 +45,19 @@ p {
     padding: 1rem;
     background-color: black;
     align-items: center;
-    background: #eee;
+    background: #eee;;
     border-radius: 2rem;
     box-shadow: -0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
     opacity: 0.8;
     overflow: hidden;
+    transition: 0.2s;
 }
 .cardcell:hover {
+    height: 7rem;
+    width: 53rem;
     opacity: 1;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .textcell {
@@ -75,14 +80,14 @@ p {
 }
 .cardcolorleft {
     width: 4rem;
-    height: 8.5rem;
+    height: 10rem;
     transform: skewX(-35deg);
     border-radius: 0.5rem;
     box-shadow: -.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .cardcolorright  {
     width: 4rem;
-    height: 8.5rem;
+    height: 10rem;
     transform: skewX(-35deg);
 }
 .controlpanel {
@@ -104,7 +109,6 @@ p {
     margin: 1rem auto;
     padding: 0.2rem;
     border-radius: 0.8rem;
-    background-color: blue;
     text-align: center;
     color: #eee;
     opacity: 0.7;
@@ -122,57 +126,57 @@ p {
     margin: 3rem auto;
 }
 
-.Bug {
+.bug {
     background-color: #92BC2C;
 }
-.Dark {
+.dark {
     background-color: #0C69C8;
 }
-.Dragon {
+.dragon {
     background-color: #42275a;
 }
-.Electric {
+.electric {
     background-color: #EDD53E;
 }
-.Fairy {
+.fairy {
     background-color: #EC8CE5;
 }
-.Fight {
+.fight {
     background-color: #CE4265;
 }
-.Fire {
+.fire {
     background-color: #FB9B51;
 }
-.Flying {
+.flying {
     background-color: #90A7DA;
 }
-.Ghost {
+.ghost {
     background-color: #516AAC;
 }
-.Grass {
+.grass {
     background-color: #5FBC51;
 }
-.Ground {
+.ground {
     background-color: #DC7545;
 }
-.Ice {
+.ice {
     background-color: #70CCBD;
 }
-.Normal {
+.normal {
     background-color: #9298A4;
 }
-.Poison {
+.poison {
     background-color: #A864C7;
 }
-.Psychic {
+.psychic {
     background-color: #F66F71;
 }
-.Rock {
+.rock {
     background-color: #C5B489;
 }
-.Steel {
+.steel {
     background-color: #52869D;
 }
-.Water {
+.water {
     background-color: #4A90DD;
 }

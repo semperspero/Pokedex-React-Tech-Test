@@ -5,7 +5,6 @@ body {
 }
 
 img {
-    width: 100px;
     height: 100px;
     margin: 10px;
     border-radius: 10%;
@@ -39,7 +38,7 @@ p {
 
 .cardcell {
     display: flex;
-    height: 6rem;
+    height: 2rem;
     width: 51rem;
     margin: 10px;
     padding: 1rem;
@@ -58,6 +57,9 @@ p {
     opacity: 1;
     cursor: pointer;
     transition: 0.2s;
+}
+.cardcell > img {
+    height: 150%;
 }
 
 .textcell {

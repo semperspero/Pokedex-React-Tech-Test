@@ -8,7 +8,7 @@ import Pokeinfo from "../components/Pokeinfo";
 const Main=()=>{
     const [pokeData,setPokeData]=useState([]);
     const [loading,setLoading]=useState(true);
-    const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/?limit=20")
+    const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/?limit=151")
     const [nextUrl,setNextUrl]=useState();
     const [prevUrl,setPrevUrl]=useState();
     const [pokeDex,setPokeDex]=useState();
@@ -50,7 +50,7 @@ const Main=()=>{
         <>
             <div className="container">
                 <div className="btn-group">
-                    {  prevUrl && <button onClick={()=>{
+                    {/* {  prevUrl && <button onClick={()=>{
                         setPokeData([])
                         setUrl(prevUrl) 
                     }}>Previous</button>}
@@ -58,7 +58,7 @@ const Main=()=>{
                     { nextUrl && <button onClick={()=>{
                         setPokeData([])
                         setUrl(nextUrl)
-                    }}>Next</button>}
+                    }}>Next</button>} */}
                 </div>
                 <div className="left-content">
                     <Card pokemon={pokeData} loading={loading} infoPokemon={poke=>setPokeDex(poke)}/>

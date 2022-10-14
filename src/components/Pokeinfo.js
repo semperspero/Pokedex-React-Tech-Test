@@ -6,7 +6,7 @@ import Brand from "../assets/pokemon-logo.png"
 import CardBottom from './CardBottom';
 import { useMotionValue, useTransform } from 'framer-motion';
 
-const Pokeinfo = ({ data }) => {
+const Pokeinfo = ({ data, type }) => {
     const [currentColor, setCurrentColor] = useState(1);
     const [CurrentVersion, setCurrentVersion] = useState(1);
   
@@ -47,7 +47,7 @@ const Pokeinfo = ({ data }) => {
                             whileTap={{cursor:"grabbing"}}
                             >
                                 <Card>
-                                    <CTop currentColor={currentColor}>
+                                    <CTop currentColor={type}>
                                     <NameBar currentColor={currentColor}>
                                         <span></span>
                                         <span>{data.name}</span>

@@ -4,27 +4,20 @@ import { Badge, CBottom, CBottomTitle, Versions, VersionTitle, Price, Size, Size
 const CardBottom = ({currentColor, setCurrentColor, data}) => {
     return(
         <CBottom>
-            <CBottomTitle>Stats</CBottomTitle>
-            <Title>Battle Rating</Title>
-            <Stars>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-            </Stars>
-            {/* <div className="stats-div">
+            <Title>Stats</Title>
+            <div className="stats-div">
                 {
                     data.stats.map(poke=>{
                         return(
                             <>
-                                <h3>{poke.stat.name}:{poke.base_stat}</h3>
+                                <p>{poke.stat.name}:{poke.base_stat}</p>
                             </>
                         )
                     })
                 }
             </div>
-            <div className="abilities">
+            <Title>abilities</Title>
+            <div className="abilities-div">
                 {
                     data.abilities.map(poke=>{
                         return(
@@ -36,7 +29,7 @@ const CardBottom = ({currentColor, setCurrentColor, data}) => {
                         )
                     })
                 }
-            </div> */}
+            </div>
             <Size>
                 <SizeTitle>Evolution</SizeTitle>
                 <Sizes>

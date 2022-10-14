@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: grid;
     place-items: center;
     cursor pointer;
@@ -32,7 +32,6 @@ export const Card = styled.div`
     background: #eee;
     border-radius: 2.5rem;
     box-shadow: 0.2rem 6rem rgba(0,0,0,0.7);
-    position: relative;
 `
 
 export const CTop = styled.div`
@@ -40,7 +39,7 @@ export const CTop = styled.div`
     padding-left: 2rem;
     border-radius: 2.5rem 2.5rem 0 0;
     transition: background 0.5s;
-    background-image: linear-gradient(to right,#FB9B51,#FBAE46);
+    background: ${({type}) => type};
 `
 
 export const Logo = styled.img`
@@ -152,8 +151,8 @@ export const Sizes = styled.div`
     span:nth-child(3) {
         width: 2rem;
         height: 2rem;
-        background: #25d393;
-        color: #fff;
+        background: #333;
+        color: #eee;
         border-radius: 50%;
         display: grid;
         place-items: center;

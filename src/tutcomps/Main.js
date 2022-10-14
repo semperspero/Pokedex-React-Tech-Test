@@ -8,20 +8,10 @@ import Pokeinfo from "../components/Pokeinfo";
 const Main=()=>{
     const [pokeData,setPokeData]=useState([]);
     const [loading,setLoading]=useState(true);
-    const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/?limit=151")
+    const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/?limit=5")
     const [nextUrl,setNextUrl]=useState();
     const [prevUrl,setPrevUrl]=useState();
     const [pokeDex,setPokeDex]=useState();
-
-    // const [pokeNames,setPokeNames]=useState([]);
-    // const getAllNames = async() => {
-    //     setLoading(true)
-    //     const allRes=await axios.get("https://pokeapi.co/api/v2/pokemon/?limit=2000")
-    //     forEach(element => {
-            
-    //     });
-    //     setPokeNames(allRes.data.results)
-    // }
 
     const pokeFun=async()=>{
         setLoading(true)
@@ -49,24 +39,9 @@ const Main=()=>{
     return(
         <>
             <div className="container">
-                <div className="btn-group">
-                    {/* {  prevUrl && <button onClick={()=>{
-                        setPokeData([])
-                        setUrl(prevUrl) 
-                    }}>Previous</button>}
-
-                    { nextUrl && <button onClick={()=>{
-                        setPokeData([])
-                        setUrl(nextUrl)
-                    }}>Next</button>} */}
-                </div>
-                <div className="left-content">
+                    <Pokeinfo data={pokeDex}/>
+                <div className="card-deck">
                     <Card pokemon={pokeData} loading={loading} infoPokemon={poke=>setPokeDex(poke)}/>
-                    
-                    
-                </div>
-                <div className="right-content">
-                   <Pokeinfo data={pokeDex}/>
                 </div>
             </div>
         </>

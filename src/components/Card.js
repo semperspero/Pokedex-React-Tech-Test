@@ -1,15 +1,17 @@
 import React from "react";
-const Card = ({ pokemon, loading, infoPokemon}) => {
+import Throbber from './Throbber.js';
+
+const Card = ({ pokemon, loading, infoPokemon, Thr}) => {
 
     return (
         <>
           {
-            loading ? <h1>Loading...</h1> :
+            loading ? <Throbber/> :
               pokemon.map((item) => {
                 const PokeType=(item.types[0].type.name)
                     return (
                     <>
-                      <div class="cardcell" key={item.id} type={item.type} onClick={()=>infoPokemon(item)}>
+                      <div class="cardcell" key={item.id} type={item.type} onClick={()=>infoPokemon(item, PokeType)} >
                         <img src={item.sprites.front_default} alt='shoe-2'/>
                         <div class="textcell">
                           <div class="title">
@@ -20,6 +22,7 @@ const Card = ({ pokemon, loading, infoPokemon}) => {
                           </div>
                         </div>
                         <div className={"cardcolorleft " + PokeType}>
+                          <div className={PokeType} id="card-click">VIEW</div>
                         </div>
                       </div>
                     </>
